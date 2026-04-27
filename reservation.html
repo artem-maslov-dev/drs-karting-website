@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRS Karting — Картинг Київ | Максимум швидкості</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/logo/logo-favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="./images/logo/logo-header.svg" alt="DRS Karting логотип">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="prices.html">Тарифи</a></li>
+                    <li><a href="promotions.html">Акції</a></li>
+                    <li><a href="certificates.html">Сертифікати</a></li>
+                    <li><a href="competitions.html">Змагання</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <a href="reservation.html" class="btn header__btn">Забронювати заїзд</a>
+        </div>
+    </header>
+
+    <section class="section title">
+        <h1 class="page__title">Бронювання заїзду</h1>
+    </section>
+
+    <form class="reservation__form" method="post" action="#">
+        <div class="field__group">
+            <label class="field__label" for="name">Ім'я</label>
+            <input class="form__field field__input" type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field__group">
+            <label class="field__label" for="phone">Номер телефону</label>
+            <input class="form__field field__input" type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="field__group">
+            <span class="field__label">Вид карту</span>
+
+            <div class="checkbox__list">
+                <label class="checkbox__item">
+                    <input type="checkbox" name="kart_type" value="adult">
+                    <span>Дорослий карт</span>
+                </label>
+
+                <label class="checkbox__item">
+                    <input type="checkbox" name="kart_type" value="child">
+                    <span>Дитячий карт</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="field__group">
+            <span class="field__label">Кількість людей</span>
+
+            <div class="counter">
+                <button class="counter__btn" type="button">
+                    <img class="counter__btn-icon" src="./images/icons/minus-icon.svg" alt="-">
+                </button>
+
+                <input class="counter__input" type="text" value="1" min="1" max="99" readonly>
+
+                <button class="counter__btn" type="button">
+                    <img class="counter__btn-icon" src="./images/icons/plus-icon.svg" alt="+">
+                </button>
+            </div>
+        </div>
+
+        <div class="field__group">
+            <span class="field__label">Кількість заїздів</span>
+
+            <div class="counter">
+                <button class="counter__btn" type="button">
+                    <img class="counter__btn-icon" src="./images/icons/minus-icon.svg" alt="-">
+                </button>
+
+                <input class="counter__input" type="text" value="1" min="1" max="99" readonly>
+
+                <button class="counter__btn" type="button">
+                    <img class="counter__btn-icon" src="./images/icons/plus-icon.svg" alt="+">
+                </button>
+            </div>
+        </div>
+
+        <div class="field__group">
+            <span class="field__label">Додаткові послуги</span>
+
+            <div class="checkbox__list">
+                <label class="checkbox__item">
+                    <input type="checkbox" name="services" value="balaclava">
+                    <span>Балаклава (багаторазове використання)</span>
+                </label>
+
+                <label class="checkbox__item">
+                    <input type="checkbox" name="services" value="camera">
+                    <span>Оренда GO PRO</span>
+                </label>
+
+                <label class="checkbox__item">
+                    <input type="checkbox" name="services" value="instructor">
+                    <span>Заняття з інструктором</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="field__group">
+            <label class="field__label" for="race-date">Дата заїзду</label>
+            <div class="field__input-wrapper">
+                <input class="form__field field__input-date" type="date" id="race-date" name="race_date" required>
+                <span class="field__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <div class="field__group">
+            <label class="field__label" for="race-time">Час заїзду</label>
+            <div class="field__input-wrapper">
+                <input class="form__field field__input-date" type="time" id="race-time" name="race_time" required>
+                <span class="field__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
+        <label class="checkbox__item">
+            <input type="checkbox" name="privacy" required>
+            <span>Я згоден з політикою обробки персональних даних</span>
+        </label>
+
+        <button class="btn submit__btn" type="submit">Забронювати заїзд</button>
+    </form>
+
+    <footer class="footer">
+        <img class="footer__finish-line" src="./images/photos/finish-line.png" alt="Декоративна фінішна смуга">
+
+        <div class="footer__content">
+            <div class="footer__links">
+                <a href="index.html" class="footer__logo">
+                    <img src="./images/logo/logo-footer.svg" alt="DRS Karting логотип">
+                </a>
+
+                <div class="footer__network">
+                    <a href="#" class="footer__network-icon">
+                        <img src="./images/icons/telegram-icon.svg" alt="Telegram">
+                    </a>
+
+                    <a href="#" class="footer__network-icon">
+                        <img src="./images/icons/tik-tok-icon.svg" alt="TikTok">
+                    </a>
+
+                    <a href="#" class="footer__network-icon">
+                        <img src="./images/icons/instagram-icon.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__contacts">
+                <div class="footer__contacts-block">
+                    <span class="footer__contacts-title">Адреса:</span>
+                    <span class="footer__contacts-text">Київ, ТРЦ "Retroville"<br>просп. Європейського Союзу, 47</span>
+                </div>
+
+                <div class="footer__contacts-block">
+                    <span class="footer__contacts-title">Контакти:</span>
+                    <span class="footer__contacts-text">+38 (093) 226-55-44</span>
+                    <span class="footer__contacts-text">drskartingcenter@gmail.com</span>
+                </div>
+
+                <div class="footer__contacts-block">
+                    <span class="footer__contacts-title">Графік роботи:</span>
+                    <span class="footer__contacts-text">Пн-Пт: 12:00 – 21:00</span>
+                    <span class="footer__contacts-text">Сб-Нд: 10:00 – 21:00</span>
+                </div>
+            </div>
+
+            <p class="footer__copyright">© 2026 DRS Karting. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
