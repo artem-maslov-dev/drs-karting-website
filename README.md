@@ -49,6 +49,20 @@ Possible next steps:
 - Enhance UI design
 - Convert the project into a fully responsive layout
 
+## Credits
+
+### Images
+Some images used in this project are from Unsplash  
+https://unsplash.com/
+
+Credits to the respective photographers on Unsplash.
+
+### Icons
+Icons used in this project are from Flaticon  
+https://www.flaticon.com/
+
+All icons belong to their respective authors on Flaticon.
+
 ## License
  
 This project is licensed under the MIT License.
