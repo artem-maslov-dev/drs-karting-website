@@ -1,4 +1,4 @@
-# Contributing to Web Calculator
+# Contributing to DRS Karting website
 
 Thanks for your interest in contributing to this project! All contributions are welcome — whether it's a bug fix, improvement, new feature, or documentation update. Please follow the guidelines below to ensure a smooth process.
 
